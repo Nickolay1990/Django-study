@@ -1,0 +1,7 @@
+{% if array %}
+    {% for i in array|dictsort:'priority' %}
+        <p>{{ i }}</p>
+    {% endfor %}
+{% else %}
+    <p>the array is empty</p>
+{% endif %}

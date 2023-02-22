@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from lesson_4.views import show_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('lesson_3/', include('lesson_3.urls')),
+    path('lesson_4/', include('lesson_4.urls')),
+    path('pols/question/<int:id>', show_page),
 ]
