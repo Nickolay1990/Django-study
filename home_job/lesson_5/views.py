@@ -8,11 +8,11 @@ def create_book(request):
     dune.count = 2
     dune.on_shop = True
     dune.name = 'Gerbert'
-    dune.description = 'Book about dune'
-    dune.email = 'dune@dune.com'
+    # dune.email = 'dune@dune.com'
     dune.weight = 3.22
     dune.site = 'http://dune.com'
     dune.ip = '127.0.0.1'
+    dune.test = 't'
     dune.save()
     return HttpResponse('created')
 
