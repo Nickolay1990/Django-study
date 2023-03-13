@@ -29,7 +29,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'lesson_3E',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,6 +38,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'djoser',
+    'lesson_4E',
 ]
 
 REST_FRAMEWORK = {
@@ -95,7 +95,7 @@ WSGI_APPLICATION = 'home_job.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'lesson_3E',
+        'NAME': 'lesson_4E',
         'USER': 'home',
         'PASSWORD': 'home',
         'HOST': '127.0.0.1',
