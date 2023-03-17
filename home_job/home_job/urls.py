@@ -15,11 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from lesson_5E.views import *
+from lesson_6E.views import *
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('jinja/', go_jinja),
-    path('sort/', go_sort),
+    path('send/', get_letter),
 ]
